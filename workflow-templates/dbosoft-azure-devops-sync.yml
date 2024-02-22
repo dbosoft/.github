@@ -1,0 +1,14 @@
+name: Sync issue to Azure DevOps
+on:
+  issues:
+  issue_comment:
+jobs:
+  sync-to-devops:
+    uses: dbosoft/dbosoft-devops/.github/workflows/azure-devops-sync.yml@main
+    with:
+      topic: other
+    secrets:
+      ado_pat: ${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}
+      github_app_id: ${{ secrets.DBOSOFT_DEVOPS_SYNC_APP_ID }}
+      github_app_key: ${{ secrets.DBOSOFT_DEVOPS_SYNC_APP_KEY }
+  
