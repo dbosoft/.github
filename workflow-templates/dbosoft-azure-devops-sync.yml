@@ -6,9 +6,8 @@ jobs:
   sync-to-devops:
     uses: dbosoft/dbosoft-devops/.github/workflows/dbosoft-azure-devops-sync.yml@main
     with:
-      topic: other
+      topic: generic
     secrets:
       ado_pat: ${{ secrets.DBOSOFT_DEVOPS_SYNC_ADO_PAT }}
       github_app_id: ${{ secrets.DBOSOFT_DEVOPS_SYNC_GITHUB_APP_ID }}
-      github_app_key: ${{ secrets.DBOSOFT_DEVOPS_SYNC_GITHUB_APP_KEY }
-  
+      github_app_key: ${{ secrets.DBOSOFT_DEVOPS_SYNC_GITHUB_APP_KEY }  
