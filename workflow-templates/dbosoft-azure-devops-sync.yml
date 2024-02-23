@@ -10,4 +10,4 @@ jobs:
     secrets:
       ado_pat: ${{ secrets.DBOSOFT_DEVOPS_SYNC_ADO_PAT }}
       github_app_id: ${{ secrets.DBOSOFT_DEVOPS_SYNC_GITHUB_APP_ID }}
-      github_app_key: ${{ secrets.DBOSOFT_DEVOPS_SYNC_GITHUB_APP_KEY }  
+      github_app_key: ${{ secrets.DBOSOFT_DEVOPS_SYNC_GITHUB_APP_KEY }}
